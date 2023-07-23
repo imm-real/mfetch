@@ -24,11 +24,11 @@ Width can be easily changed with
 fetch -w [WIDHT]
 fetch --width [WIDTH]
 ```
-![Imgur](https://i.imgur.com/lTrzViy.png)
+![Imgur](https://i.imgur.com/arDEnta.png)
 
 Border can be removed with
 ```
 fetch -nf
 fetch --noframe
 ```
-![Imgur](https://i.imgur.com/arDEnta.png)
+![Imgur](https://i.imgur.com/OPwjrh6.png)
