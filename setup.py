@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name='mfetch',
-    version='0.0.1',
+    version='0.0.2',
     author='michaelscripter',
     url="https://github.com/MichaelScripter/kfetch",
     project_urls={
