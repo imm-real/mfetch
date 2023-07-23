@@ -7,6 +7,7 @@ def main():
     )
     parser.add_argument('-w', '--width', type=int, default=50)
     parser.add_argument('-nf', '--noframe', action='store_true')
+
     args = parser.parse_args()
     fetch(int(args.width), args.noframe)
 

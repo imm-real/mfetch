@@ -4,9 +4,9 @@ setuptools.setup(
     name='mfetch',
     version='0.0.2',
     author='michaelscripter',
-    url="https://github.com/MichaelScripter/kfetch",
+    url="https://github.com/MichaelScripter/mfetch",
     project_urls={
-        "Bug Tracker": "https://github.com/MichaelScripter/kfetch/issues",
+        "Bug Tracker": "https://github.com/MichaelScripter/mfetch/issues",
     },
     description='Simple and minimalistic fetching software, requires python 3 and nerdfonts',
     classifiers=[
