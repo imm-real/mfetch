@@ -4,7 +4,7 @@ from colorama import Fore as c
 from colorama import Back as b
 from .frame import frame
 
-def fetch(width):
+def fetch(width, noframe):
     data = platform.freedesktop_os_release()
 
     name = data['NAME']
@@ -36,13 +36,13 @@ def fetch(width):
         case 'Mageia':
             distro_icon = f'{c.CYAN}{c.RESET}'
 
-    print(frame(
-f"""{c.GREEN}{c.RESET} {kernel} {kernel_version}
+    text = f"""{c.GREEN}{c.RESET} {kernel} {kernel_version}
 {distro_icon} {name} {version} {architecture}
 {c.BLUE}󰆍{c.RESET} {shell}
 {c.YELLOW}{c.RESET} {username}
 
 {b.BLACK}   {b.RED}   {b.GREEN}   {b.YELLOW}   {b.BLUE}   {b.MAGENTA}   {b.CYAN}   {b.WHITE}   {b.RESET}
 {b.LIGHTBLACK_EX}   {b.LIGHTRED_EX}   {b.LIGHTGREEN_EX}   {b.LIGHTYELLOW_EX}   {b.LIGHTBLUE_EX}   {b.LIGHTMAGENTA_EX}   {b.LIGHTCYAN_EX}   {b.LIGHTWHITE_EX}   {b.RESET}"""
-, width))
+
+    print(text if noframe else frame(text, width))
    
